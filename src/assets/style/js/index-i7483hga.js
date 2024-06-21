@@ -7,11 +7,12 @@ const menuAccount = document.querySelector('#menuaccount');
 
 bars.addEventListener('click', function() {
     bars.classList.toggle('bars-active');
-    sidebarMenu.classList.toggle('hidden');
+    sidebarMenu.classList.remove('hidden');
 });
 
 closeBar.addEventListener('click', function() {
     sidebarMenu.classList.add('hidden');
+    menuAccount.classList.remove('hidden');
 });
 
 account.addEventListener('click', function() {
@@ -23,8 +24,6 @@ account.addEventListener('click', function() {
 window.onclick = function(e) {
     if (e.target == sidebarMenu){
         sidebarMenu.classList.add('hidden');
-    } else {
-        
     }
 };
 
