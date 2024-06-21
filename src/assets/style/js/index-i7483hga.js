@@ -2,6 +2,8 @@
 const bars = document.querySelector('#bars');
 const sidebarMenu = document.querySelector('#sidebar');
 const closeBar = document.querySelector('#close');
+const account   = document.querySelector('#account');
+const menuAccount = document.querySelector('#menuaccount');
 
 bars.addEventListener('click', function() {
     bars.classList.toggle('bars-active');
@@ -12,10 +14,17 @@ closeBar.addEventListener('click', function() {
     sidebarMenu.classList.add('hidden');
 });
 
+account.addEventListener('click', function() {
+    account.classList.toggle('account-active');
+    menuAccount.classList.toggle('hidden');
+});
+
 // Click outside close element id
 window.onclick = function(e) {
     if (e.target == sidebarMenu){
         sidebarMenu.classList.add('hidden');
+    } else {
+        
     }
 };
 
