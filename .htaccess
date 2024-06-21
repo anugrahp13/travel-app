@@ -1,0 +1,5 @@
+Options +FollowSymlinks
+RewriteEngine on
+RewriteRule ^/$ index.html [nc],
+RewriteRule ^databooking$ databooking.html [nc],
+RewriteRule ^datapackage$ datapakage.html [nc],
