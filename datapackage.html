@@ -27,7 +27,7 @@
                 <a href="about.html" class="hidden md:block lg:inline-flex items-center gap-1 px-3 py-2 text-sm font-medium text-slate-800 active:text-primary hover:text-primary dark:text-white hover:dark:text-teal-300">Tentang Kami</a>
                 <a href="contact.html" class="hidden md:block lg:inline-flex items-center gap-1 px-3 py-2 text-sm font-medium text-slate-800 active:text-primary hover:text-primary dark:text-white hover:dark:text-teal-300">Kontak</a>
             </nav>
-            <div class="flex gap-4 items-center order-2">
+            <div class="flex gap-4 items-center relative order-2">
                 <button id="darkmode" class="text-lg items-center order-1">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 lg:h-6 lg:w-6 scale-[.80] lg:scale-110 sun" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
@@ -39,21 +39,12 @@
                 <button id="account" class="block h-8 w-8 lg:h-6 lg:w-6 scale-[.80] lg:scale-110 rounded-full overflow-hidden border-2 border-primary focus:outline-none order-2">
                     <img class="h-full w-full object-cover" src="src/assets/avatar/avatar.jpg" alt="">
                 </button>
-
                 <!-- Menu Account -->
-                <div id="menuaccount" class="hidden bg-dark text-sm font-medium dark:bg-white rounded-lg absolute top-[3.2rem] right-[3rem]">
-                    <ul class="py-2 dark:text-dark">
-                        <li>
-                            <a href="/databooking" class="block px-4 py-2 text-white hover:bg-gray-700 dark:text-dark dark:hover:bg-gray-600 dark:hover:text-white">Data Booking</a>
-                        </li>
-                        <li>
-                            <a href="/datapackage" class="block px-4 py-2 text-white hover:bg-gray-700 dark:text-dark dark:hover:bg-gray-600 dark:hover:text-white">Data Package</a>
-                        </li>
-                    </ul>
-                    <hr>
-                    <div class="py-2">
-                        <a href="#" class="block px-4 py-2 text-white hover:bg-gray-700 dark:text-dark dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
-                    </div>
+                <div id="menuaccount" class="hidden py-2 w-36 bg-white dark:bg-slate-800 text-sm font-medium rounded-lg absolute top-[3.2rem] right-0 shadow-lg">
+                    <a href="/databooking" class="block px-4 py-2 text-slate-800 hover:bg-gray-200 dark:text-white dark:hover:bg-gray-600 dark:hover:text-white">Data Booking</a>
+                    <a href="/datapackage" class="block px-4 py-2 text-slate-800 hover:bg-gray-200 dark:text-white dark:hover:bg-gray-600 dark:hover:text-white">Data Package</a>
+                    <hr class="my-2">
+                    <a href="#" class="block px-4 py-2 text-slate-800 hover:bg-gray-200 dark:text-white  dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
                 </div>
             </div>
         </div>
