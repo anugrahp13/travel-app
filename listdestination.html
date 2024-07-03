@@ -87,135 +87,92 @@
     </div>
     <!-- Sidebar Menu End -->
 
-    <section class="my-52 dark:bg-dark">
+    <section class="mt-52 dark:bg-dark">
         <div class="container mx-auto px-4 lg:max-w-7xl flex items-center justify-center">
-            <div class="text-center grid gap-10">
+            <div class="text-center grid gap-4">
                 <h1 class="text-sm text-primary dark:text-primary">
-                    <span class="block font-bold text-dark text-4xl lg:text-5xl dark:text-white aos-init aos-animate" data-aos="fade-down" data-aos-duration="1000">Booking Destination</span>
+                    <span class="block font-bold text-dark text-4xl lg:text-5xl dark:text-white aos-init aos-animate" data-aos="fade-down" data-aos-duration="1000">List Destination</span>
                 </h1>
+                <div class="flex items-start justify-center md:justify-start mt-5">
+                    <a href="/adddestination" class="rounded-lg py-2 px-3 text-sm bg-primary border-primary text-white hover:border-white hover:shadow-lg hover:opacity-95 transition duration-300 ease-in-out">Add Destination</a>
+                </div>
                 <div class="relative overflow-x-auto">
                     <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 shadow-lg">
-                        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-white">
+                        <thead class="text-xs text-slate-800 uppercase bg-gray-100 dark:bg-gray-700 dark:text-white text-center">
                             <tr>
                                 <th scope="col" class="px-6 py-3">
-                                    Full Name
+                                    Title
                                 </th>
                                 <th scope="col" class="px-6 py-3">
-                                    No HP
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Email
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Name Destination
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Schedule Booking
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Bank Name
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Payer Name
+                                    Category
                                 </th>
                                 <th scope="col" class="px-6 py-3">
                                     Price
                                 </th>
                                 <th scope="col" class="px-6 py-3">
-                                    Status
+                                    Location
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Duration
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Action
                                 </th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                                 <td scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    Zein Irfansyah
-                                </td>
-                                <td class="px-6 py-4">
-                                    08391237402
-                                </td>
-                                <td class="px-6 py-4">
-                                    zein@gmail.com
-                                </td>
-                                <td class="px-6 py-4">
                                     Pulau Seribu Pesona
                                 </td>
                                 <td class="px-6 py-4">
-                                    22 July 2024
-                                </td>
-                                <td class="px-6 py-4">
-                                    BCA
-                                </td>
-                                <td class="px-6 py-4">
-                                    Zein Irfansyah
-                                </td>
-                                <td class="px-6 py-4">
-                                    $200
-                                </td>
-                                <td class="px-6 py-4 text-primary font-bold">
-                                    Success
-                                </td>
-                            </tr>
-                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    Farah Khairunnisa
-                                </th>
-                                <td class="px-6 py-4">
-                                    038213129423
-                                </td>
-                                <td class="px-6 py-4">
-                                    farah@gmail.com
-                                </td>
-                                <td class="px-6 py-4">
-                                    Bali Relaxation
-                                </td>
-                                <td class="px-6 py-4">
-                                    14 November 2024
-                                </td>
-                                <td class="px-6 py-4">
-                                    Mandiri
-                                </td>
-                                <td class="px-6 py-4">
-                                    Jhon Wick
-                                </td>
-                                <td class="px-6 py-4">
-                                    $300
-                                </td>
-                                <td class="px-6 py-4 text-yellow-500 font-bold">
-                                    Pending
-                                </td>
-                            </tr>
-                            <tr class="bg-white dark:bg-gray-800">
-                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    Ilham
-                                </th>
-                                <td class="px-6 py-4">
-                                    0123618123421
-                                </td>
-                                <td class="px-6 py-4">
-                                    ilham@gmail.com
-                                </td>
-                                <td class="px-6 py-4">
-                                    Bali Adventure
-                                </td>
-                                <td class="px-6 py-4">
-                                    17 Agustus 2024
-                                </td>
-                                <td class="px-6 py-4">
-                                    BRI
-                                </td>
-                                <td class="px-6 py-4">
-                                    Ilham
+                                    Bali Good
                                 </td>
                                 <td class="px-6 py-4">
                                     $250
                                 </td>
-                                <td class="px-6 py-4 text-red-500 font-bold">
-                                    Unpaid
+                                <td class="px-6 py-4">
+                                    Bali
+                                </td>
+                                <td class="px-6 py-4">
+                                    3 Days
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="flex items-center justify-center gap-2">
+                                        <a href="#" class="rounded-lg py-2 px-3 text-sm bg-slate-200 hover:bg-primary border-slate-200 hover:border-primary text-slate-800 hover:text-white hover:shadow-lg hover:opacity-95 transition duration-300 ease-in-out">Update</a>
+                                        <a href="#" class="rounded-lg py-2 px-3 text-sm bg-primary hover:bg-pink border-slate-200 hover:border-pink text-white hover:text-white hover:shadow-lg hover:opacity-95 transition duration-300 ease-in-out">Delete</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    Bali Relaxation
+                                </th>
+                                <td class="px-6 py-4">
+                                    Bali Good
+                                </td>
+                                <td class="px-6 py-4">
+                                    $300
+                                </td>
+                                <td class="px-6 py-4">
+                                    Bali
+                                </td>
+                                <td class="px-6 py-4">
+                                    5 Days
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="flex items-center justify-center gap-2">
+                                        <a href="#" class="rounded-lg py-2 px-3 text-sm bg-slate-200 hover:bg-primary border-slate-200 hover:border-primary text-slate-800 hover:text-white hover:shadow-lg hover:opacity-95 transition duration-300 ease-in-out">Update</a>
+                                        <a href="#" class="rounded-lg py-2 px-3 text-sm bg-primary hover:bg-pink border-slate-200 hover:border-pink text-white hover:text-white hover:shadow-lg hover:opacity-95 transition duration-300 ease-in-out">Delete</a>
+                                    </div>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
+                </div>
+                <div class="grid items-center justify-center gap-4 mt-52">
+                    <a href="#" class="rounded-lg py-3 px-20 text-sm bg-primary border-primary text-white hover:border-white hover:shadow-lg hover:opacity-95 transition duration-300 ease-in-out">Submit</a>
+                    <a href="#" class="rounded-lg py-3 px-20 text-sm bg-slate-200 hover:bg-pink border-slate-200 hover:border-pink text-slate-800 hover:text-white hover:shadow-lg hover:opacity-95 transition duration-300 ease-in-out">Delete</a>
                 </div>
             </div>
         </div>
