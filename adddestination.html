@@ -89,89 +89,47 @@
 
     <section class="mt-52 dark:bg-dark">
         <div class="container mx-auto px-4 lg:max-w-7xl flex items-center justify-center">
-            <div class="text-center grid gap-4">
+            <div class="text-center grid gap-5">
                 <h1 class="text-sm text-primary dark:text-primary">
-                    <span class="block font-bold text-dark text-4xl lg:text-5xl dark:text-white aos-init aos-animate" data-aos="fade-down" data-aos-duration="1000">List Destination</span>
+                    <span class="block font-bold text-dark text-4xl lg:text-5xl dark:text-white aos-init aos-animate" data-aos="fade-down" data-aos-duration="1000">Destination Information Form</span>
                 </h1>
-                <div class="flex items-start justify-center md:justify-start mt-5">
-                    <a href="/adddestination" class="rounded-lg py-2 px-3 text-sm bg-primary border-primary text-white hover:border-white hover:shadow-lg hover:opacity-95 transition duration-300 ease-in-out">Add Destination</a>
-                </div>
-                <div class="relative overflow-x-auto">
-                    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 shadow-lg">
-                        <thead class="text-xs text-slate-800 uppercase bg-gray-100 dark:bg-gray-700 dark:text-white text-center">
-                            <tr>
-                                <th scope="col" class="px-6 py-3">
-                                    Title
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Category
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Price
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Location
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Duration
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Action
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                                <td scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    Pulau Seribu Pesona
-                                </td>
-                                <td class="px-6 py-4">
-                                    Bali Good
-                                </td>
-                                <td class="px-6 py-4">
-                                    $250
-                                </td>
-                                <td class="px-6 py-4">
-                                    Bali
-                                </td>
-                                <td class="px-6 py-4">
-                                    3 Days
-                                </td>
-                                <td class="px-6 py-4">
-                                    <div class="flex items-center justify-center gap-2">
-                                        <a href="#" class="rounded-lg py-2 px-3 text-sm bg-slate-200 hover:bg-primary border-slate-200 hover:border-primary text-slate-800 hover:text-white hover:shadow-lg hover:opacity-95 transition duration-300 ease-in-out">Update</a>
-                                        <a href="#" class="rounded-lg py-2 px-3 text-sm bg-primary hover:bg-pink border-slate-200 hover:border-pink text-white hover:text-white hover:shadow-lg hover:opacity-95 transition duration-300 ease-in-out">Delete</a>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    Bali Relaxation
-                                </th>
-                                <td class="px-6 py-4">
-                                    Bali Good
-                                </td>
-                                <td class="px-6 py-4">
-                                    $300
-                                </td>
-                                <td class="px-6 py-4">
-                                    Bali
-                                </td>
-                                <td class="px-6 py-4">
-                                    5 Days
-                                </td>
-                                <td class="px-6 py-4">
-                                    <div class="flex items-center justify-center gap-2">
-                                        <a href="#" class="rounded-lg py-2 px-3 text-sm bg-slate-200 hover:bg-primary border-slate-200 hover:border-primary text-slate-800 hover:text-white hover:shadow-lg hover:opacity-95 transition duration-300 ease-in-out">Update</a>
-                                        <a href="#" class="rounded-lg py-2 px-3 text-sm bg-primary hover:bg-pink border-slate-200 hover:border-pink text-white hover:text-white hover:shadow-lg hover:opacity-95 transition duration-300 ease-in-out">Delete</a>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                <h2 class="text-slate-400 text-sm text-center dark:text-slate-200 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">Please fill up the blank fields below</h2>
+                <form action="" class="flex gap-x-8 gap-y-4 grid-cols-2">
+                    <div class="text-left w-full">
+                        <div class="mb-5">
+                            <label for="title" class="block mb-2 text-sm font-medium text-slate-800 dark:text-white">Title</label>
+                            <input type="text" id="title" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary" placeholder="Please type here ..." required>
+                        </div>
+                        <div class="mb-5">
+                            <label for="category" class="block mb-2 text-sm font-medium text-slate-800 dark:text-white">Category</label>
+                            <input type="text" id="category" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary" placeholder="Please type here ..." required>
+                        </div>
+                        <div class="mb-5">
+                            <label for="description" class="block mb-2 text-sm font-medium text-slate-800 dark:text-white">Description</label>
+                            <input type="text" id="description" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary" placeholder="Please type here ..." required>
+                        </div>
+                        <div class="mb-5">
+                            <label for="price" class="block mb-2 text-sm font-medium text-slate-800 dark:text-white">Price</label>
+                            <input type="text" id="price" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary" placeholder="Please type here ..." required>
+                        </div>
+                    </div>
+                    <div class="text-left w-full">
+                        <div class="mb-5">
+                            <label for="location" class="block mb-2 text-sm font-medium text-slate-800 dark:text-white">Location</label>
+                            <input type="text" id="location" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary" placeholder="Please type here ..." required>
+                        </div>
+                        <div class="mb-5">
+                            <label for="duration" class="block mb-2 text-sm font-medium text-slate-800 dark:text-white">Duration</label>
+                            <input type="text" id="duration" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary" placeholder="Please type here ..." required>
+                        </div>
+                        <div class="mb-5">
+                            <label for="thumbnail" class="block mb-2 text-sm font-medium text-slate-800 dark:text-white">Thumbnail</label>
+                            <input type="file" id="thumbnail" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg cursor-pointer focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary" placeholder="Please type here ..." aria-describedby="thumbnail">
+                        </div>
+                    </div>
+                </form>
                 <div class="grid items-center justify-center gap-4 mt-48">
-                    <a href="#" class="rounded-lg py-3 px-20 text-sm bg-primary border-primary text-white hover:border-white hover:shadow-lg hover:opacity-95 transition duration-300 ease-in-out">Submit</a>
+                    <a href="#" class="rounded-lg py-3 px-20 text-sm bg-primary border-primary text-white hover:border-white hover:shadow-lg hover:opacity-95 transition duration-300 ease-in-out">Next</a>
                     <a href="#" class="rounded-lg py-3 px-20 text-sm bg-slate-200 hover:bg-pink border-slate-200 hover:border-pink text-slate-800 hover:text-white hover:shadow-lg hover:opacity-95 transition duration-300 ease-in-out">Cancel</a>
                 </div>
             </div>
