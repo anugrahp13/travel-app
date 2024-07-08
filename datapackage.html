@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/assets/style/css/index-i5483hga.css">
     <link rel="stylesheet" href="src/assets/style/css/index-i7483hga.css">
-    <title>Data Package - Travel App</title>
+    <title>Data Destination - Travel App</title>
 </head>
 <body class="bg-white dark:bg-slate-900 dark:text-white transition-colors">
     <!-- Header Start -->
@@ -40,7 +40,7 @@
                     <img class="h-full w-full object-cover" src="src/assets/avatar/avatar.jpg" alt="">
                 </button>
                 <!-- Menu Account -->
-                <div id="menuaccount" class="hidden py-2 w-36 bg-white dark:bg-slate-800 text-sm font-medium rounded-lg absolute top-[3.2rem] right-0 shadow-lg">
+                <div id="menuaccount" class="hidden py-2 w-40 bg-white dark:bg-slate-800 text-sm font-medium rounded-lg absolute top-[3.2rem] right-0 shadow-lg">
                     <a href="/databooking" class="block px-4 py-2 text-slate-800 hover:bg-gray-200 dark:text-white dark:hover:bg-gray-600 dark:hover:text-white">Data Booking</a>
                     <a href="/datapackage" class="block px-4 py-2 text-slate-800 hover:bg-gray-200 dark:text-white dark:hover:bg-gray-600 dark:hover:text-white">Data Package</a>
                     <a href="/datadestination" class="block px-4 py-2 text-slate-800 hover:bg-gray-200 dark:text-white dark:hover:bg-gray-600 dark:hover:text-white">Data Destination</a>
@@ -87,119 +87,92 @@
     </div>
     <!-- Sidebar Menu End -->
 
-    <section class="my-52 dark:bg-dark">
-        <div class="container mx-auto px-4 lg:max-w-7xl">
-            <div class="text-center grid gap-10">
+    <section class="mt-52 dark:bg-dark">
+        <div class="container mx-auto px-4 lg:max-w-7xl flex items-center justify-center">
+            <div class="text-center grid gap-4">
                 <h1 class="text-sm text-primary dark:text-primary">
-                    <span class="block font-bold text-dark text-4xl lg:text-5xl dark:text-white aos-init aos-animate" data-aos="fade-down" data-aos-duration="1000">Data Package</span>
+                    <span class="block font-bold text-dark text-4xl lg:text-5xl dark:text-white aos-init aos-animate" data-aos="fade-down" data-aos-duration="1000">Travel Packages List</span>
                 </h1>
-                <div class="flex flex-wrap items-center justify-center md:justify-end gap-4">
-                    <button class="text-sm font-medium rounded-xl px-6 py-2 border border-slate800 dark:border-white hover:dark:border-primary text-slate-800 hover:border-primary hover:text-white dark:text-white hover:bg-primary">
-                        Add Package
-                    </button>
-                    <button class="text-sm font-medium rounded-xl px-6 py-2 border border-slate800 dark:border-white hover:dark:border-primary text-slate-800 hover:border-primary hover:text-white dark:text-white hover:bg-primary">
-                        Edit Package
-                    </button>
+                <div class="flex items-start justify-center md:justify-start mt-5">
+                    <a href="/adddestination" class="rounded-lg py-2 px-3 text-sm bg-primary border-primary text-white hover:border-white hover:shadow-lg hover:opacity-95 transition duration-300 ease-in-out">Add Destination</a>
                 </div>
                 <div class="relative overflow-x-auto">
-                    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-white">
+                    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 shadow-lg">
+                        <thead class="text-xs text-slate-800 uppercase bg-gray-100 dark:bg-gray-700 dark:text-white text-center">
                             <tr>
                                 <th scope="col" class="px-6 py-3">
                                     Title
                                 </th>
                                 <th scope="col" class="px-6 py-3">
-                                    Description
+                                    Category
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Price
                                 </th>
                                 <th scope="col" class="px-6 py-3">
                                     Location
                                 </th>
                                 <th scope="col" class="px-6 py-3">
-                                    Category
-                                </th>
-                                <th scope="col" class="px-6 py-3">
                                     Duration
                                 </th>
                                 <th scope="col" class="px-6 py-3">
-                                    Duration Description
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Price
+                                    Action
                                 </th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                                 <td scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    Bali Word
-                                </td>
-                                <td class="px-6 py-4">
-                                    Good destionation in the Bali
-                                </td>
-                                <td class="px-6 py-4">
-                                    Bali
+                                    Pulau Seribu Pesona
                                 </td>
                                 <td class="px-6 py-4">
                                     Bali Good
                                 </td>
                                 <td class="px-6 py-4">
+                                    $250
+                                </td>
+                                <td class="px-6 py-4">
+                                    Bali
+                                </td>
+                                <td class="px-6 py-4">
                                     3 Days
                                 </td>
                                 <td class="px-6 py-4">
-                                    Tiba di Bandara Ngurah Rai dan penjemputan. Check-in di hotel di sekitar Ubud. Menikmati waktu luang untuk bersantai dan persiapan kegiatan besok.
-                                </td>
-                                <td class="px-6 py-4">
-                                    $300
+                                    <div class="flex items-center justify-center gap-2">
+                                        <a href="/updatedestionation" class="rounded-lg py-2 px-3 text-sm bg-slate-200 hover:bg-primary border-slate-200 hover:border-primary text-slate-800 hover:text-white hover:shadow-lg hover:opacity-95 transition duration-300 ease-in-out">Update</a>
+                                        <a href="#" class="rounded-lg py-2 px-3 text-sm bg-primary hover:bg-pink border-slate-200 hover:border-pink text-white hover:text-white hover:shadow-lg hover:opacity-95 transition duration-300 ease-in-out">Delete</a>
+                                    </div>
                                 </td>
                             </tr>
                             <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    Puncak
+                                    Bali Relaxation
                                 </th>
                                 <td class="px-6 py-4">
-                                    Good destination in the Bogor
+                                    Bali Good
                                 </td>
                                 <td class="px-6 py-4">
-                                    Bogor
+                                    $300
                                 </td>
                                 <td class="px-6 py-4">
-                                    Bogor Good
+                                    Bali
                                 </td>
                                 <td class="px-6 py-4">
-                                    4 Days
+                                    5 Days
                                 </td>
                                 <td class="px-6 py-4">
-                                    Pagi ini, ikuti upacara keagamaan di Pura Besakih. Lanjutkan dengan tur kuliner khas Bali untuk mencicipi berbagai hidangan tradisional. Perjalanan selesai dengan drop-off di Bandara Ngurah Rai.
-                                </td>
-                                <td class="px-6 py-4">
-                                    $200
-                                </td>
-                            </tr>
-                            <tr class="bg-white dark:bg-gray-800">
-                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    Curug
-                                </th>
-                                <td class="px-6 py-4">
-                                    Good
-                                </td>
-                                <td class="px-6 py-4">
-                                    Purwokerto
-                                </td>
-                                <td class="px-6 py-4">
-                                    Good Purwokerto
-                                </td>
-                                <td class="px-6 py-4">
-                                    2 Days
-                                </td>
-                                <td class="px-6 py-4">
-                                    Kunjungan ke Desa Penglipuran untuk mempelajari kehidupan desa tradisional Bali. Makan siang dengan hidangan khas Bali. Berlanjut ke Pura Besakih untuk mengagumi keindahan pura.
-                                </td>
-                                <td class="px-6 py-4">
-                                    $400
+                                    <div class="flex items-center justify-center gap-2">
+                                        <a href="/updatedestionation" class="rounded-lg py-2 px-3 text-sm bg-slate-200 hover:bg-primary border-slate-200 hover:border-primary text-slate-800 hover:text-white hover:shadow-lg hover:opacity-95 transition duration-300 ease-in-out">Update</a>
+                                        <a href="#" class="rounded-lg py-2 px-3 text-sm bg-primary hover:bg-pink border-slate-200 hover:border-pink text-white hover:text-white hover:shadow-lg hover:opacity-95 transition duration-300 ease-in-out">Delete</a>
+                                    </div>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
+                </div>
+                <div class="grid items-center justify-center gap-4 mt-48">
+                    <a href="#" class="rounded-lg py-3 px-20 text-sm bg-primary border-primary text-white hover:border-white hover:shadow-lg hover:opacity-95 transition duration-300 ease-in-out">Submit</a>
+                    <a href="#" class="rounded-lg py-3 px-20 text-sm bg-slate-200 hover:bg-pink border-slate-200 hover:border-pink text-slate-800 hover:text-white hover:shadow-lg hover:opacity-95 transition duration-300 ease-in-out">Cancel</a>
                 </div>
             </div>
         </div>
