@@ -7,7 +7,7 @@ module.exports = {
     './datadestination.html',
     './adddestination.html',
     './updatedestination.html',
-    './setdesrun.html',
+    './datadesrun.html',
     './src/components/**/*.{html,js}',
     './pages/**/*.{html,js}',
   ],

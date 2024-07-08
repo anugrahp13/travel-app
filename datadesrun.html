@@ -95,49 +95,29 @@
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 inline" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                     </svg>
-                    <span class="text-slate-800 dark:text-white">Destination Information Form</span>
+                    <a href="/adddestination" class="hover:text-teal-700 dark:text-primary hover:dark:text-white">Destination Information Form</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 inline" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                    </svg>
+                    <span class="text-slate-800 dark:text-white">Number of Destinations and Rundowns</span>
                 </div>
                 <h1 class="text-sm text-primary text-center dark:text-primary">
-                    <span class="block font-bold text-dark text-4xl lg:text-5xl dark:text-white aos-init aos-animate" data-aos="fade-down" data-aos-duration="1000">Destination Information Form</span>
+                    <span class="block font-bold text-dark text-4xl lg:text-5xl dark:text-white aos-init aos-animate" data-aos="fade-down" data-aos-duration="1000">Number of Destinations and Rundowns</span>
                 </h1>
                 <h2 class="text-slate-400 text-sm text-center dark:text-slate-200 mb-5 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">Please fill up the blank fields below</h2>
-                <form action="" class="flex gap-x-8 gap-y-4 grid-cols-2">
-                    <div class="text-left w-full">
+                <form action="" class="grid justify-center items-center">
+                    <div class="text-center w-40">
                         <div class="mb-5">
-                            <label for="title" class="block mb-2 text-sm font-medium text-slate-800 dark:text-white">Title</label>
-                            <input type="text" id="title" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary" placeholder="Please type here ..." required>
+                            <input type="number" id="title" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary" placeholder="Destinations" required>
                         </div>
                         <div class="mb-5">
-                            <label for="category" class="block mb-2 text-sm font-medium text-slate-800 dark:text-white">Category</label>
-                            <input type="text" id="category" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary" placeholder="Please type here ..." required>
-                        </div>
-                        <div class="mb-5">
-                            <label for="description" class="block mb-2 text-sm font-medium text-slate-800 dark:text-white">Description</label>
-                            <input type="text" id="description" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary" placeholder="Please type here ..." required>
-                        </div>
-                        <div class="mb-5">
-                            <label for="price" class="block mb-2 text-sm font-medium text-slate-800 dark:text-white">Price</label>
-                            <input type="text" id="price" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary" placeholder="Please type here ..." required>
-                        </div>
-                    </div>
-                    <div class="text-left w-full">
-                        <div class="mb-5">
-                            <label for="location" class="block mb-2 text-sm font-medium text-slate-800 dark:text-white">Location</label>
-                            <input type="text" id="location" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary" placeholder="Please type here ..." required>
-                        </div>
-                        <div class="mb-5">
-                            <label for="duration" class="block mb-2 text-sm font-medium text-slate-800 dark:text-white">Duration</label>
-                            <input type="text" id="duration" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary" placeholder="Please type here ..." required>
-                        </div>
-                        <div class="mb-5">
-                            <label for="thumbnail" class="block mb-2 text-sm font-medium text-slate-800 dark:text-white">Thumbnail</label>
-                            <input type="file" id="thumbnail" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg cursor-pointer focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary" placeholder="Please type here ..." aria-describedby="thumbnail">
+                            <input type="number" id="category" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary" placeholder="Rundowns" required>
                         </div>
                     </div>
                 </form>
                 <div class="grid items-center justify-center gap-4 mt-48">
-                    <a href="/datadesrun" class="rounded-lg py-3 px-20 text-sm bg-primary border-primary text-white hover:border-white hover:shadow-lg hover:opacity-95 transition duration-300 ease-in-out">Next</a>
-                    <a href="/datadestination" class="rounded-lg py-3 px-20 text-sm bg-slate-200 hover:bg-pink border-slate-200 hover:border-pink text-slate-800 hover:text-white hover:shadow-lg hover:opacity-95 transition duration-300 ease-in-out">Cancel</a>
+                    <a href="/setdestination" class="rounded-lg py-3 px-20 text-sm bg-primary border-primary text-white hover:border-white hover:shadow-lg hover:opacity-95 transition duration-300 ease-in-out">Next</a>
+                    <a href="/adddestination" class="rounded-lg py-3 px-20 text-sm bg-slate-200 hover:bg-pink border-slate-200 hover:border-pink text-slate-800 hover:text-white hover:shadow-lg hover:opacity-95 transition duration-300 ease-in-out">Cancel</a>
                 </div>
             </div>
         </div>
