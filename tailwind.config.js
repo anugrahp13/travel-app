@@ -4,7 +4,7 @@ module.exports = {
     './index.html',
     './databooking.html',
     './datapackage.html',
-    './listdestination.html',
+    './datadestination.html',
     './adddestination.html',
     './updatedestination.html',
     './src/components/**/*.{html,js}',
